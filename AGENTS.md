@@ -42,6 +42,8 @@ Run affected tests with `cargo test -p <changed-crate>`; include dependent crate
 
 - Husk owns the UI host. Dolphin must use Husk's public protocol and never reach around it.
 - Herdr-specific code stays in its own module (the Herdr client) and the plugins that use it.
+- Keep RPC awaits outside the sidebar actor's input path. Return results to the state owner, reject stale completions, and cancel/join owned tasks on host close.
+- Every successful event subscription must trigger a fresh snapshot; failure/EOF must clear connection health even if an old snapshot is available. Test quiet reconnects with isolated sockets, not a live interactive app.
 - Conventional commits with detailed messages. No attribution trailers.
 
 ## Beads Issue Tracker
