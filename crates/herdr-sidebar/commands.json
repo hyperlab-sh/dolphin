@@ -1,0 +1,51 @@
+[
+  {
+    "id": "herdr.focus_selected",
+    "title": "Herdr: Focus Selected Space / Agent in Herdr",
+    "category": "Herdr",
+    "shortcut": "enter",
+    "description": "Switches the live Herdr server focus to the highlighted item"
+  },
+  {
+    "id": "herdr.view.split",
+    "title": "Sidebar: Switch to Spaces + Agents Split View",
+    "category": "View",
+    "shortcut": "1",
+    "description": "Shows Spaces & Worktrees above Live Agents"
+  },
+  {
+    "id": "herdr.view.tree",
+    "title": "Sidebar: Switch to Workspace \u2192 Tab \u2192 Pane Tree View",
+    "category": "View",
+    "shortcut": "2",
+    "description": "Shows full hierarchical tree of all Herdr tabs and panes"
+  },
+  {
+    "id": "herdr.view.agents",
+    "title": "Sidebar: Switch to Agent Mission Control View",
+    "category": "View",
+    "shortcut": "3",
+    "description": "Shows detailed agent cards with context % bars and models"
+  },
+  {
+    "id": "herdr.sort.toggle",
+    "title": "Herdr: Toggle Agent Sort Order (Priority / Spaces)",
+    "category": "Herdr",
+    "shortcut": "o",
+    "description": "Cycles agent sorting between status priority and workspace number"
+  },
+  {
+    "id": "herdr.workspace.create",
+    "title": "Herdr: Create New Workspace",
+    "category": "Herdr",
+    "shortcut": "n",
+    "description": "Creates a new workspace in the live Herdr server"
+  },
+  {
+    "id": "herdr.refresh",
+    "title": "Herdr: Force Snapshot Refresh",
+    "category": "Herdr",
+    "shortcut": "r",
+    "description": "Re-fetches session.snapshot and pane.read from herdr.sock"
+  }
+]
