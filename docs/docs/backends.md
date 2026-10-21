@@ -1,16 +1,21 @@
 ---
 title: "Backends"
-description: "Supported and planned backends."
+description: "Herdr today, other backends under evaluation."
 ---
 
 # Backends
 
-| Backend | State | Notes |
-| :--- | :--- | :--- |
-| Herdr | First target | Client is replaceable over its existing sockets |
-| Orca | Planned | Needs a backend abstraction separating Herdr-specific bridging from published state |
-| bb | Analysis pending | Compare bb's thread and plugin model with Dolphin's workspace, tab, pane and agent model |
+Dolphin is backed by Herdr. Support for other backends is an open question, not a promise.
 
-## Backend abstraction
+| Backend | State |
+| :--- | :--- |
+| Herdr | Supported. Dolphin talks to an unmodified `herdr server` |
+| Orca | Under evaluation |
+| bb | Under evaluation |
 
-Backend code sits behind an interface so the state Dolphin publishes on the Husk bus does not depend on which backend produced it. Slots and plugins written against that state work with any backend that can fill it.
+## Evaluation
+
+The first planned task compares the APIs and protocols of Orca and bb with Herdr's: how workspaces, agents, terminals and events are modeled, and how a client attaches. Full backend independence may not be achievable, since the models can diverge. The result decides one of two paths:
+
+1. Define a backend contract and implement the Herdr connection as one adapter.
+2. Build directly on Herdr.

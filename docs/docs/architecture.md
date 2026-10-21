@@ -1,29 +1,25 @@
 ---
 title: "Architecture"
-description: "How Dolphin sits between a backend and Husk."
+description: "How Dolphin sits between Herdr and Husk."
 ---
 
 # Architecture
 
 ```text
-Husk (workbench host, slots, compositor)
-   ^  Husk plugin protocol
-Dolphin (Rust plugin)
-   ^  backend bridge
-Backend: herdr server | Orca | bb
+Husk (workbench host: slots, compositor, events)
+   ^  Husk plugin protocol (newline-delimited JSON)
+Dolphin plugins (herdr-sidebar, ...)
+   ^  herdr.sock (JSON-RPC, events)   herdr-client.sock (bincode)
+Herdr server (workspaces, tabs, panes, PTYs, agent detection)
 ```
 
-Dolphin is one Husk plugin. It does not run its own plugin system. It publishes backend state (workspaces, tabs, panes, agents) on Husk's bus and streams the backend's pane surface into Husk's `main-stage`. Other Husk plugins subscribe to that state.
+Dolphin does not run its own plugin system. It is a set of Husk plugins. They read Herdr state and publish it to Husk, and later stream Herdr's pane surface into Husk's `main-stage`. Other Husk plugins can subscribe to that state.
 
 ## Herdr side
 
-Dolphin talks to an unmodified `herdr server` over two sockets:
+- `herdr.sock` carries JSON-RPC (`workspace.list`, `tab.list`, `pane.list`, ...) and `events.subscribe`. `herdr-sidebar` needs only this.
+- `herdr-client.sock` carries the bincode wire protocol, including `PaneSurfaceFrame` with the rectangle of every visible pane and split. Rendering real panes will need it.
 
-- `herdr-client.sock` carries the bincode wire protocol, including `PaneSurfaceFrame` with the exact rectangle of every visible pane and split.
-- `herdr.sock` carries JSON-RPC and `events.subscribe`.
+## Client versus server
 
-Because the frame includes pane rectangles, plugin UI can be anchored to individual panes: header buttons, status pills and banners.
-
-## What needs no server changes
-
-The research counted 35 extension points. Of those, 30 can be built in the client alone, including sidebar replacement, row badges, docked panels, tab bar widgets, context menus, overlays, the command palette, theme hooks and client-diffed events. Five need changes inside `herdr server`: inline terminal embeds, synchronous veto hooks, internal PTY events, agent launch injection and remote host workers.
+Most interface features need no change to Herdr: sidebar replacement, row badges, docked panels, tab bar widgets, menus, overlays, theming. A few need server changes: inline terminal embeds, synchronous veto hooks, internal PTY events, and agent launch injection.

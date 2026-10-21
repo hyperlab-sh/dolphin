@@ -1,22 +1,26 @@
 # Dolphin
 
-A pluggable client for terminal agent multiplexers, built as a Rust plugin for [Husk](https://github.com/hyperlab-sh/husk).
+An agentic development environment (ADE) in the terminal. Dolphin is a TUI built on [Husk](https://github.com/hyperlab-sh/husk) and backed by [Herdr](https://herdr.dev), the terminal multiplexer for coding agents.
 
-Dolphin began as an alternative client for [Herdr](https://herdr.dev). Herdr already separates its client shell from its headless server, so a replacement client can own all the UI chrome (sidebars, rails, overlays, panels) while an unmodified `herdr server` keeps managing PTYs, layouts and agent detection. The research found that about 65% of the extension points a `bb`-style plugin system would want need no server changes.
+Herdr runs the workspaces, tabs, panes and agents. Dolphin replaces its client: it owns the interface (sidebar, rails, panels, overlays) and talks to an unmodified `herdr server`. Because the interface is Husk plugins rather than tab-scoped panes, it stays put when you switch workspaces instead of respawning and resizing the terminal.
 
 ## Status
 
-Research phase. There is no code yet.
+Early. The first plugin, `herdr-sidebar`, connects to a running Herdr and shows spaces, worktrees and agent status inside Husk. Nothing else is built yet.
 
-- [`docs/`](docs/) is the docmd documentation site.
-- Design research is kept outside the repository, in the project space's `notes/research/`.
+Planned, in order:
 
-## Backends
+1. Research the APIs and protocols of Orca and bb and compare them with Herdr's, then decide whether Dolphin defines a backend contract with Herdr as an adapter, or builds directly on Herdr. Backend independence may not be achievable.
+2. Replicate the Herdr UI (real tabs and panes) as a starting point.
 
-| Backend | State |
-| :--- | :--- |
-| Herdr | First target, researched |
-| Orca | Planned |
-| bb | Feasibility analysis pending |
+Work is tracked in beads (`dolphin-*`, shared with Husk since Dolphin depends on Husk features).
 
-Work is tracked in beads (`dolphin-*` issues, shared with Husk).
+## Build
+
+Dolphin imports Husk's public packages. For local development, a gitignored `go.work` points at the sibling Husk checkout.
+
+```bash
+go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
+```
+
+`herdr-sidebar` connects to `$HERDR_SOCKET_PATH`, or `~/.config/herdr/herdr.sock`. Plugin manifests live in `plugins/`.

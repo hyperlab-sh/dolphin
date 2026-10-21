@@ -1,19 +1,40 @@
 # Dolphin — Agent Instructions
 
-Dolphin is a pluggable client for terminal agent multiplexers. It started as an alternative client for Herdr and is being built as a Rust plugin for [Husk](https://github.com/hyperlab-sh/husk), the generic TUI workbench. Dolphin bridges a backend to Husk's slots: it speaks `herdr-client.sock` (bincode, PaneSurfaceFrame) and `herdr.sock` (JSON-RPC and events) to an unmodified `herdr server` on one side, and Husk's plugin protocol on the other.
+Dolphin is an agentic development environment (ADE) TUI built on [Husk](https://github.com/hyperlab-sh/husk) and backed by Herdr. Herdr runs workspaces, tabs, panes and agents; Dolphin replaces Herdr's client. It talks to an unmodified `herdr server` over `herdr.sock` (JSON-RPC and events) and `herdr-client.sock` (bincode, `PaneSurfaceFrame`), and presents the result as Husk plugins and slots.
 
-Planned backends: Herdr (first), Orca, and possibly `bb` (analysis pending).
+Whether other backends (Orca, bb) can be supported is an open question. The first task (`dolphin-res`) researches their APIs and decides if Dolphin defines a backend contract with Herdr as an adapter. Do not build backend abstractions before that decision.
 
-This is a hyper space: project files live in `worktrees/main/`; `bin/`, `data/`, `notes/`, `scratch/` at the space root are local-only. Read `HYPER.md` at the space root for layout rules.
+This is a hyper space: project files live in `worktrees/main/`; `bin/`, `data/`, `notes/`, `scratch/` at the space root are local-only. Read `HYPER.md` at the space root for layout rules. Design research is not in the repo: it lives in `notes/research/` (`../../notes/research/` from the worktree), starting at `00-overview-and-roadmap.md`. Husk-side research (docs 07–09) is in the Husk space's `notes/research/`.
 
-## State
+## Build & Test
 
-There is no code yet. The repository holds only the docs site (`docs/`, docmd). The design research is not in the repo: it lives in the space's local-only `notes/research/` (`../../notes/research/` from the worktree). `00-overview-and-roadmap.md` there is the index; docs 07–09 (Husk architecture, prior art, language analysis) are in the Husk space's `notes/research/`.
+```bash
+go build -o ../../bin/herdr-sidebar ./cmd/herdr-sidebar
+go vet ./...
+```
+
+Dolphin imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development a gitignored `go.work` in the worktree uses the sibling Husk checkout (`../../../husk/worktrees/main`). Recreate it if missing:
+
+```bash
+go work init . ../../../husk/worktrees/main
+```
+
+There are no tests yet.
+
+## Layout
+
+| Path | Purpose |
+| :--- | :--- |
+| `cmd/herdr-sidebar/` | Husk plugin: spaces, worktrees, tabs and agents from `herdr.sock`; publishes `workspace_context` |
+| `pkg/herdr/` | Herdr JSON-RPC socket client |
+| `plugins/herdr-sidebar/husk-plugin.json` | Plugin manifest |
+| `docs/` | docmd documentation site |
 
 ## Conventions
 
-- Husk owns the UI host; Dolphin must use Husk's public protocol, never reach around it.
-- Backend-specific code (Herdr, Orca, bb) sits behind a backend abstraction so the state published on the Husk bus is backend-neutral.
+- Husk owns the UI host. Dolphin must use Husk's public protocol and never reach around it.
+- Herdr-specific code stays in `pkg/herdr` and the plugins that use it.
+- Use Charm's default palette (ANSI / lipgloss presets). No custom hex themes.
 - Conventional commits with detailed messages. No attribution trailers.
 
 ## Beads Issue Tracker
