@@ -13,11 +13,35 @@ Dolphin plugins (herdr-sidebar, ...)
 Herdr server (workspaces, tabs, panes, PTYs, agent detection)
 ```
 
-Dolphin is written in Rust, which lets it reuse Herdr's protocol types and bincode codecs. Because Husk plugins speak JSON lines, the language choice needs nothing from Husk. Dolphin does not run its own plugin system. It is a set of Husk plugins. They read Herdr state and publish it to Husk, and later stream Herdr's pane surface into Husk's `main-stage`. Other Husk plugins can subscribe to that state.
+Dolphin is written in Rust. Its sidebar uses serde/serde_json to mirror the public wire types, with no dependencies on Herdr's own crates. Because Husk plugins speak JSON lines, the language choice needs nothing from Husk. Dolphin does not run its own plugin system. It is a set of Husk plugins. They read Herdr state and publish it to Husk; streaming Herdr's terminal pane surfaces into Husk's `main-stage` is future work. Other Husk plugins can subscribe to the selected workspace context.
+
+## Rust workspace
+
+- `crates/husk-plugin`: typed envelopes and payloads for Husk's plugin protocol, theme palette, bounded read loop and send function. It connects to `HUSK_SOCKET_PATH`, or uses stdin/stdout when unset. No Herdr code lives here.
+- `crates/dolphin-herdr`: Herdr-only snapshot/layout types, socket path resolution, typed RPC methods and an independent event subscription connection. Each ordinary RPC owns a short-lived socket with a timeout.
+- `crates/herdr-sidebar`: the plugin binary, split/tree/agent view state, priority/space sorting, keyboard and mouse input, ANSI true-color rendering, workspace-context publication and `--probe`.
+
+A single-thread Tokio runtime serializes sidebar state updates. An asynchronous reader handles Husk input, and a dedicated Herdr event task reconnects after disconnection. A 220 ms timer animates working-agent indicators. Host EOF aborts both tasks and closes their sockets. The generic Husk transport ignores malformed JSON messages, bounds line sizes and propagates I/O errors.
+
+The sidebar renders navigation, list, footer, header, topology stage and inspector slots. As in the Go reference, it advertises `thread-row-status` without emitting a separate row-status surface. It registers no activity-rail items. The Go spike remains under `spike/go` for comparison.
+
+## Build and checks
+
+Requires Rust 1.88 or newer on Unix:
+
+```bash
+cargo build --release
+cargo test
+cargo clippy --all-targets -- -D warnings
+cargo fmt --check
+./target/release/herdr-sidebar --probe
+```
+
+Use `cargo test -p <changed-crate>` for affected tests, including dependent crates for shared changes. Tests cover Go-compatible Husk payload fixtures, sanitized live Herdr responses, RPC request parameters and sidebar input/render state without modifying a live server.
 
 ## Herdr side
 
-- `herdr.sock` carries JSON-RPC (`workspace.list`, `tab.list`, `pane.list`, ...) and `events.subscribe`. `herdr-sidebar` needs only this.
+- `herdr.sock` carries JSON-RPC (`session.snapshot`, workspace/tab/pane/agent focus, `workspace.create`, `pane.read`, `pane.layout`) and `events.subscribe`. `herdr-sidebar` needs only this. Socket resolution uses `HERDR_SOCKET_PATH`, then `XDG_CONFIG_HOME/herdr/herdr.sock`, then `~/.config/herdr/herdr.sock`.
 - `herdr-client.sock` carries the bincode wire protocol, including `PaneSurfaceFrame` with the rectangle of every visible pane and split. Rendering real panes will need it.
 
 ## Client versus server
