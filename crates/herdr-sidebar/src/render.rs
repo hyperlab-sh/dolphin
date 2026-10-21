@@ -714,7 +714,11 @@ impl Sidebar {
             &subtle("press 'v' for Husk Slot Map"),
             w,
         )];
-        if let Some(layout) = &self.preview_layout {
+        if let Some(layout) = self
+            .preview_layout
+            .as_ref()
+            .filter(|_| self.preview_pane_id == pane)
+        {
             if !layout.panes.is_empty() {
                 let mode = if layout.layout_mode.is_empty() {
                     "tiled"
@@ -930,6 +934,36 @@ mod tests {
         assert_eq!(fit_line("abcdef", 4), "abc…");
         assert_eq!(fit_line("a", 3), "a  ");
         assert_eq!(visible_width("日本"), 4);
+    }
+    #[test]
+    fn stage_never_renders_geometry_from_the_previous_selection() {
+        let mut sidebar = crate::tests::sidebar();
+        sidebar.preview_layout = Some(dolphin_herdr::PaneLayoutResult {
+            panes: vec![dolphin_herdr::PaneLayoutRect {
+                pane_id: "old-pane".into(),
+                width: 80,
+                height: 24,
+                ..Default::default()
+            }],
+            ..Default::default()
+        });
+        sidebar.preview_pane_id = "previous-target".into();
+        sidebar.render_stage();
+        assert!(!sidebar
+            .outbox
+            .iter()
+            .filter_map(|e| e.slot_update.as_ref())
+            .flat_map(|p| &p.lines)
+            .any(|line| line.contains("BSP Geometry")));
+        sidebar.outbox.clear();
+        sidebar.preview_pane_id = sidebar.target_pane();
+        sidebar.render_stage();
+        assert!(sidebar
+            .outbox
+            .iter()
+            .filter_map(|e| e.slot_update.as_ref())
+            .flat_map(|p| &p.lines)
+            .any(|line| line.contains("BSP Geometry")));
     }
     #[test]
     fn all_slots_and_hit_targets_are_bounded() {
