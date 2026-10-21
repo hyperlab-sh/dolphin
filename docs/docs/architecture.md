@@ -13,7 +13,7 @@ Dolphin plugins (herdr-sidebar, ...)
 Herdr server (workspaces, tabs, panes, PTYs, agent detection)
 ```
 
-Dolphin does not run its own plugin system. It is a set of Husk plugins. They read Herdr state and publish it to Husk, and later stream Herdr's pane surface into Husk's `main-stage`. Other Husk plugins can subscribe to that state.
+Dolphin is written in Rust, which lets it reuse Herdr's protocol types and bincode codecs. Because Husk plugins speak JSON lines, the language choice needs nothing from Husk. Dolphin does not run its own plugin system. It is a set of Husk plugins. They read Herdr state and publish it to Husk, and later stream Herdr's pane surface into Husk's `main-stage`. Other Husk plugins can subscribe to that state.
 
 ## Herdr side
 

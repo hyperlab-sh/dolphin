@@ -15,4 +15,4 @@ Herdr already has the right boundary: the client owns the outer terminal layout 
 
 ## Status
 
-Early. The `herdr-sidebar` plugin works against a running Herdr. See [Architecture](/architecture/) and [Backends](/backends/).
+Early. Dolphin is implemented in Rust, and the Rust code is not written yet. A throwaway Go prototype of the Herdr sidebar plugin exists as reference. See [Architecture](/architecture/) and [Backends](/backends/).

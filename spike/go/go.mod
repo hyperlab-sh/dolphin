@@ -1,4 +1,4 @@
-module github.com/hyperlab-sh/dolphin
+module github.com/hyperlab-sh/dolphin/spike/go
 
 go 1.26.6
 

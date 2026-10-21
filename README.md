@@ -6,21 +6,23 @@ Herdr runs the workspaces, tabs, panes and agents. Dolphin replaces its client: 
 
 ## Status
 
-Early. The first plugin, `herdr-sidebar`, connects to a running Herdr and shows spaces, worktrees and agent status inside Husk. Nothing else is built yet.
+Early. Dolphin is implemented in **Rust**, and the Rust code does not exist yet. The only code is a throwaway Go prototype in [`spike/go`](spike/go): a `herdr-sidebar` Husk plugin that connects to a running Herdr and shows spaces, worktrees and agent status.
 
 Planned, in order:
 
 1. Research the APIs and protocols of Orca and bb and compare them with Herdr's, then decide whether Dolphin defines a backend contract with Herdr as an adapter, or builds directly on Herdr. Backend independence may not be achievable.
-2. Replicate the Herdr UI (real tabs and panes) as a starting point.
+2. Set up the Rust workspace and port the sidebar from the spike; delete the spike at parity.
+3. Replicate the Herdr UI (real tabs and panes) as a starting point.
 
 Work is tracked in beads (`dolphin-*`, shared with Husk since Dolphin depends on Husk features).
 
 ## Build
 
-Dolphin imports Husk's public packages. For local development, a gitignored `go.work` points at a local Husk checkout.
+There is no Rust build yet. To try the Go spike (it imports Husk's public packages, so a gitignored `go.work` pointing at a local Husk checkout is needed):
 
 ```bash
+cd spike/go
 go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
 ```
 
-`herdr-sidebar` connects to `$HERDR_SOCKET_PATH`, or `~/.config/herdr/herdr.sock`. Plugin manifests live in `plugins/`.
+It connects to `$HERDR_SOCKET_PATH`, or `~/.config/herdr/herdr.sock`.

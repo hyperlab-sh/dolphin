@@ -4,14 +4,23 @@ Dolphin is an agentic development environment (ADE) TUI built on [Husk](https://
 
 Whether other backends (Orca, bb) can be supported is an open question. The first task (`dolphin-res`) researches their APIs and decides if Dolphin defines a backend contract with Herdr as an adapter. Do not build backend abstractions before that decision.
 
+## Language
+
+Dolphin is implemented in **Rust** so it can reuse Herdr's protocol types and bincode codecs. The Rust workspace does not exist yet (`dolphin-rs`, after `dolphin-res`). Do not add new features in Go.
+
+`spike/go` is a throwaway Go prototype of the Herdr sidebar (a Husk plugin). It is reference material to port from and will be deleted when the Rust version reaches parity.
+
 ## Build & Test
 
+No Rust build yet. The Go spike:
+
 ```bash
+cd spike/go
 go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
 go vet ./...
 ```
 
-Dolphin imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development use a gitignored `go.work` that includes a local Husk checkout:
+The spike imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development use a gitignored `go.work` that includes a local Husk checkout:
 
 ```bash
 go work init . <path-to-husk-checkout>
@@ -23,16 +32,15 @@ There are no tests yet.
 
 | Path | Purpose |
 | :--- | :--- |
-| `cmd/herdr-sidebar/` | Husk plugin: spaces, worktrees, tabs and agents from `herdr.sock`; publishes `workspace_context` |
-| `pkg/herdr/` | Herdr JSON-RPC socket client |
-| `plugins/herdr-sidebar/husk-plugin.json` | Plugin manifest |
+| `spike/go/cmd/herdr-sidebar/` | Go prototype Husk plugin: spaces, worktrees, tabs and agents from `herdr.sock`; publishes `workspace_context` |
+| `spike/go/pkg/herdr/` | Prototype Herdr JSON-RPC socket client |
+| `spike/go/plugins/herdr-sidebar/husk-plugin.json` | Prototype plugin manifest |
 | `docs/` | docmd documentation site |
 
 ## Conventions
 
 - Husk owns the UI host. Dolphin must use Husk's public protocol and never reach around it.
-- Herdr-specific code stays in `pkg/herdr` and the plugins that use it.
-- Use Charm's default palette (ANSI / lipgloss presets). No custom hex themes.
+- Herdr-specific code stays in its own module (the Herdr client) and the plugins that use it.
 - Conventional commits with detailed messages. No attribution trailers.
 
 ## Beads Issue Tracker

@@ -16,7 +16,7 @@ import (
 	"github.com/charmbracelet/x/ansi"
 	"github.com/muesli/termenv"
 
-	"github.com/hyperlab-sh/dolphin/pkg/herdr"
+	"github.com/hyperlab-sh/dolphin/spike/go/pkg/herdr"
 	"github.com/hyperlab-sh/husk/pkg/huskipc"
 	"github.com/hyperlab-sh/husk/pkg/theme"
 )
