@@ -21,7 +21,7 @@ Dolphin is written in Rust. Its sidebar uses serde/serde_json to mirror the publ
 - `crates/dolphin-herdr`: Herdr-only snapshot/layout types, socket path resolution, typed RPC methods and an independent event subscription connection. Each ordinary RPC owns a short-lived socket with a timeout.
 - `crates/herdr-sidebar`: the plugin binary, split/tree/agent view state, priority/space sorting, keyboard and mouse input, ANSI true-color rendering, workspace-context publication and `--probe`.
 
-A single-thread Tokio runtime serializes sidebar state updates. An asynchronous reader handles Husk input, and a dedicated Herdr event task reconnects after disconnection. A 220 ms timer animates working-agent indicators. Host EOF aborts both tasks and closes their sockets. The generic Husk transport ignores malformed JSON messages, bounds line sizes and propagates I/O errors.
+A single-owner actor on a single-thread Tokio runtime serializes sidebar state updates. An asynchronous reader handles Husk input, and a dedicated Herdr event task reports connection transitions and reconnects after disconnection. Every successful subscription triggers a fresh snapshot, even when the server emits no events; subscription failure or EOF marks the sidebar disconnected. Snapshot, layout and mutation RPCs run in owned background tasks, so slow calls never delay input processing or selection rendering. Generation checks reject stale snapshot/layout results, and event bursts coalesce snapshot requests. A 220 ms timer animates working-agent indicators. Host EOF aborts and joins all transport and RPC tasks, closing their sockets. The generic Husk transport ignores malformed JSON messages, bounds line sizes and propagates I/O errors.
 
 The sidebar renders navigation, list, footer, header, topology stage and inspector slots. As in the Go reference, it advertises `thread-row-status` without emitting a separate row-status surface. It registers no activity-rail items. The Go spike remains under `spike/go` for comparison.
 
@@ -37,7 +37,7 @@ cargo fmt --check
 ./target/release/herdr-sidebar --probe
 ```
 
-Use `cargo test -p <changed-crate>` for affected tests, including dependent crates for shared changes. Tests cover Go-compatible Husk payload fixtures, sanitized live Herdr responses, RPC request parameters and sidebar input/render state without modifying a live server.
+Use `cargo test -p <changed-crate>` for affected tests, including dependent crates for shared changes. Tests cover Go-compatible Husk payload fixtures (including omitted, empty and null collections), sanitized live Herdr responses, RPC request parameters and sidebar input/render state without modifying a live server. Isolated socket/duplex mocks exercise quiet reconnects, subscription/snapshot races, delayed layout and focus calls, stale-result rejection and host-close cleanup.
 
 ## Herdr side
 
