@@ -1,5 +1,6 @@
 //! Sidebar state machine and rendering, isolated from live sockets for testing.
 mod render;
+pub mod runtime;
 use dolphin_herdr::{home_dir, AgentInfo, PaneLayoutResult, SessionSnapshot};
 use husk_plugin::*;
 pub use render::fit_line;
