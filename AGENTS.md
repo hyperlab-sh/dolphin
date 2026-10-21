@@ -34,6 +34,7 @@ There are no tests yet.
 
 - Husk owns the UI host. Dolphin must use Husk's public protocol and never reach around it.
 - Herdr-specific code stays in `pkg/herdr` and the plugins that use it.
+- Project status lives in `STATUS.md` at the space root (local-only, not in the repo); update it when state changes.
 - Use Charm's default palette (ANSI / lipgloss presets). No custom hex themes.
 - Conventional commits with detailed messages. No attribution trailers.
 
