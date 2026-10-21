@@ -1,0 +1,299 @@
+{
+  "id": "example",
+  "result": {
+    "type": "workspace_list",
+    "workspaces": [
+      {
+        "active_tab_id": "example-1",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 1,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_yellow": "example"
+        },
+        "workspace_id": "example-2"
+      },
+      {
+        "active_tab_id": "example-3",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 2,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_lime": "example"
+        },
+        "workspace_id": "example-4"
+      },
+      {
+        "active_tab_id": "example-5",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 3,
+        "pane_count": 4,
+        "tab_count": 4,
+        "tokens": {
+          "space_indigo": "example"
+        },
+        "workspace_id": "example-6",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": false,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-7",
+        "agent_status": "working",
+        "focused": true,
+        "label": "example",
+        "number": 4,
+        "pane_count": 2,
+        "tab_count": 1,
+        "tokens": {
+          "space_green": "example"
+        },
+        "workspace_id": "example-8",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": false,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-9",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 5,
+        "pane_count": 2,
+        "tab_count": 1,
+        "tokens": {
+          "space_cyan": "example"
+        },
+        "workspace_id": "example-10",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": false,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-11",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 6,
+        "pane_count": 2,
+        "tab_count": 1,
+        "tokens": {
+          "space_green": "example"
+        },
+        "workspace_id": "example-12",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-13",
+        "agent_status": "unknown",
+        "focused": false,
+        "label": "example",
+        "number": 7,
+        "pane_count": 3,
+        "tab_count": 2,
+        "tokens": {
+          "space_lime": "example"
+        },
+        "workspace_id": "example-14"
+      },
+      {
+        "active_tab_id": "example-15",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 8,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_red": "example"
+        },
+        "workspace_id": "example-16"
+      },
+      {
+        "active_tab_id": "example-17",
+        "agent_status": "unknown",
+        "focused": false,
+        "label": "example",
+        "number": 9,
+        "pane_count": 2,
+        "tab_count": 1,
+        "tokens": {
+          "space_magenta": "example"
+        },
+        "workspace_id": "example-18"
+      },
+      {
+        "active_tab_id": "example-19",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 10,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_green": "example"
+        },
+        "workspace_id": "example-20"
+      },
+      {
+        "active_tab_id": "example-21",
+        "agent_status": "idle",
+        "focused": false,
+        "label": "example",
+        "number": 11,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_lime": "example"
+        },
+        "workspace_id": "example-22"
+      },
+      {
+        "active_tab_id": "example-23",
+        "agent_status": "working",
+        "focused": false,
+        "label": "example",
+        "number": 12,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_teal": "example"
+        },
+        "workspace_id": "example-24",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-25",
+        "agent_status": "working",
+        "focused": false,
+        "label": "example",
+        "number": 13,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_lime": "example"
+        },
+        "workspace_id": "example-26",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-27",
+        "agent_status": "working",
+        "focused": false,
+        "label": "example",
+        "number": 14,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_red": "example"
+        },
+        "workspace_id": "example-28",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-29",
+        "agent_status": "working",
+        "focused": false,
+        "label": "example",
+        "number": 15,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_blue": "example"
+        },
+        "workspace_id": "example-30",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-31",
+        "agent_status": "unknown",
+        "focused": false,
+        "label": "example",
+        "number": 16,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_lime": "example"
+        },
+        "workspace_id": "example-32",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": false,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      },
+      {
+        "active_tab_id": "example-33",
+        "agent_status": "working",
+        "focused": false,
+        "label": "example",
+        "number": 17,
+        "pane_count": 1,
+        "tab_count": 1,
+        "tokens": {
+          "space_blue": "example"
+        },
+        "workspace_id": "example-34",
+        "worktree": {
+          "checkout_path": "/home/example/project",
+          "is_linked_worktree": true,
+          "repo_key": "example",
+          "repo_name": "example",
+          "repo_root": "/home/example/project"
+        }
+      }
+    ]
+  }
+}
