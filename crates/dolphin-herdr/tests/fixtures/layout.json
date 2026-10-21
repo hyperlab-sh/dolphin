@@ -1,0 +1,31 @@
+{
+  "id": "example",
+  "result": {
+    "layout": {
+      "area": {
+        "height": 37,
+        "width": 235,
+        "x": 0,
+        "y": 0
+      },
+      "focused_pane_id": "example-70",
+      "panes": [
+        {
+          "focused": true,
+          "pane_id": "example-70",
+          "rect": {
+            "height": 37,
+            "width": 235,
+            "x": 0,
+            "y": 0
+          }
+        }
+      ],
+      "splits": [],
+      "tab_id": "example-33",
+      "workspace_id": "example-34",
+      "zoomed": false
+    },
+    "type": "pane_layout"
+  }
+}

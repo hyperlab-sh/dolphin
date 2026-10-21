@@ -1,0 +1,2954 @@
+{
+  "id": "example",
+  "result": {
+    "type": "session_snapshot",
+    "snapshot": {
+      "version": "0.9.5",
+      "protocol": 22,
+      "focused_workspace_id": "example-8",
+      "focused_tab_id": "example-7",
+      "focused_pane_id": "example-50",
+      "workspaces": [
+        {
+          "workspace_id": "example-2",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-1",
+          "agent_status": "idle",
+          "tokens": {
+            "space_yellow": "example"
+          }
+        },
+        {
+          "workspace_id": "example-4",
+          "number": 2,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-3",
+          "agent_status": "idle",
+          "tokens": {
+            "space_lime": "example"
+          }
+        },
+        {
+          "workspace_id": "example-6",
+          "number": 3,
+          "label": "example",
+          "focused": false,
+          "pane_count": 4,
+          "tab_count": 4,
+          "active_tab_id": "example-5",
+          "agent_status": "idle",
+          "tokens": {
+            "space_indigo": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": false
+          }
+        },
+        {
+          "workspace_id": "example-8",
+          "number": 4,
+          "label": "example",
+          "focused": true,
+          "pane_count": 2,
+          "tab_count": 1,
+          "active_tab_id": "example-7",
+          "agent_status": "done",
+          "tokens": {
+            "space_green": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": false
+          }
+        },
+        {
+          "workspace_id": "example-10",
+          "number": 5,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "tab_count": 1,
+          "active_tab_id": "example-9",
+          "agent_status": "idle",
+          "tokens": {
+            "space_cyan": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": false
+          }
+        },
+        {
+          "workspace_id": "example-12",
+          "number": 6,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "tab_count": 1,
+          "active_tab_id": "example-11",
+          "agent_status": "idle",
+          "tokens": {
+            "space_green": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        },
+        {
+          "workspace_id": "example-14",
+          "number": 7,
+          "label": "example",
+          "focused": false,
+          "pane_count": 3,
+          "tab_count": 2,
+          "active_tab_id": "example-13",
+          "agent_status": "unknown",
+          "tokens": {
+            "space_lime": "example"
+          }
+        },
+        {
+          "workspace_id": "example-16",
+          "number": 8,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-15",
+          "agent_status": "idle",
+          "tokens": {
+            "space_red": "example"
+          }
+        },
+        {
+          "workspace_id": "example-18",
+          "number": 9,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "tab_count": 1,
+          "active_tab_id": "example-17",
+          "agent_status": "unknown",
+          "tokens": {
+            "space_magenta": "example"
+          }
+        },
+        {
+          "workspace_id": "example-20",
+          "number": 10,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-19",
+          "agent_status": "idle",
+          "tokens": {
+            "space_green": "example"
+          }
+        },
+        {
+          "workspace_id": "example-22",
+          "number": 11,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-21",
+          "agent_status": "idle",
+          "tokens": {
+            "space_lime": "example"
+          }
+        },
+        {
+          "workspace_id": "example-24",
+          "number": 12,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-23",
+          "agent_status": "working",
+          "tokens": {
+            "space_teal": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        },
+        {
+          "workspace_id": "example-26",
+          "number": 13,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-25",
+          "agent_status": "working",
+          "tokens": {
+            "space_lime": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        },
+        {
+          "workspace_id": "example-28",
+          "number": 14,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-27",
+          "agent_status": "working",
+          "tokens": {
+            "space_red": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        },
+        {
+          "workspace_id": "example-30",
+          "number": 15,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-29",
+          "agent_status": "working",
+          "tokens": {
+            "space_blue": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        },
+        {
+          "workspace_id": "example-32",
+          "number": 16,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-31",
+          "agent_status": "unknown",
+          "tokens": {
+            "space_lime": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": false
+          }
+        },
+        {
+          "workspace_id": "example-34",
+          "number": 17,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "tab_count": 1,
+          "active_tab_id": "example-33",
+          "agent_status": "working",
+          "tokens": {
+            "space_blue": "example"
+          },
+          "worktree": {
+            "repo_key": "example",
+            "repo_name": "example",
+            "repo_root": "/home/example/project",
+            "checkout_path": "/home/example/project",
+            "is_linked_worktree": true
+          }
+        }
+      ],
+      "tabs": [
+        {
+          "tab_id": "example-1",
+          "workspace_id": "example-2",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-3",
+          "workspace_id": "example-4",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-5",
+          "workspace_id": "example-6",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-42",
+          "workspace_id": "example-6",
+          "number": 23,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-45",
+          "workspace_id": "example-6",
+          "number": 24,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-48",
+          "workspace_id": "example-6",
+          "number": 25,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-7",
+          "workspace_id": "example-8",
+          "number": 1,
+          "label": "example",
+          "focused": true,
+          "pane_count": 2,
+          "agent_status": "done"
+        },
+        {
+          "tab_id": "example-9",
+          "workspace_id": "example-10",
+          "number": 2,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-11",
+          "workspace_id": "example-12",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-13",
+          "workspace_id": "example-14",
+          "number": 2,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "agent_status": "unknown"
+        },
+        {
+          "tab_id": "example-72",
+          "workspace_id": "example-14",
+          "number": 3,
+          "label": "2",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "unknown"
+        },
+        {
+          "tab_id": "example-15",
+          "workspace_id": "example-16",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-17",
+          "workspace_id": "example-18",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 2,
+          "agent_status": "unknown"
+        },
+        {
+          "tab_id": "example-19",
+          "workspace_id": "example-20",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-21",
+          "workspace_id": "example-22",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "idle"
+        },
+        {
+          "tab_id": "example-23",
+          "workspace_id": "example-24",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "working"
+        },
+        {
+          "tab_id": "example-25",
+          "workspace_id": "example-26",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "working"
+        },
+        {
+          "tab_id": "example-27",
+          "workspace_id": "example-28",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "working"
+        },
+        {
+          "tab_id": "example-29",
+          "workspace_id": "example-30",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "working"
+        },
+        {
+          "tab_id": "example-31",
+          "workspace_id": "example-32",
+          "number": 1,
+          "label": "1",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "unknown"
+        },
+        {
+          "tab_id": "example-33",
+          "workspace_id": "example-34",
+          "number": 1,
+          "label": "example",
+          "focused": false,
+          "pane_count": 1,
+          "agent_status": "working"
+        }
+      ],
+      "panes": [
+        {
+          "pane_id": "example-35",
+          "terminal_id": "example-36",
+          "workspace_id": "example-2",
+          "tab_id": "example-1",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "unknown": "example",
+            "idle": "example",
+            "blocked": "example",
+            "working": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "context_left": "example",
+            "space_yellow": "example",
+            "context": "example",
+            "context_used": "example",
+            "effort": "example",
+            "model": "example",
+            "context_window": "example",
+            "context_used_pct": "14%",
+            "model_context": "example",
+            "agent_info": "example",
+            "model_id": "example",
+            "model_effort": "example",
+            "claude_icon": "example",
+            "context_compact": "example",
+            "context_left_pct": "86%"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 45991
+        },
+        {
+          "pane_id": "example-37",
+          "terminal_id": "example-38",
+          "workspace_id": "example-4",
+          "tab_id": "example-3",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "blocked": "example",
+            "done": "example",
+            "idle": "example",
+            "unknown": "example",
+            "working": "example"
+          },
+          "tokens": {
+            "context_compact": "example",
+            "claude_icon": "example",
+            "space_lime": "example",
+            "model": "example",
+            "model_effort": "example",
+            "context_window": "example",
+            "context_left_pct": "84%",
+            "context_left": "example",
+            "context": "example",
+            "model_context": "example",
+            "effort": "example",
+            "context_used_pct": "16%",
+            "agent_info": "example",
+            "context_used": "example",
+            "model_id": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 45991
+        },
+        {
+          "pane_id": "example-39",
+          "terminal_id": "example-40",
+          "workspace_id": "example-6",
+          "tab_id": "example-5",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "blocked": "example",
+            "done": "example",
+            "working": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "effort": "example",
+            "model": "example",
+            "claude_icon": "example",
+            "model_effort": "example",
+            "model_id": "example",
+            "space_indigo": "example",
+            "model_context": "example",
+            "context_left": "example",
+            "context_used": "0",
+            "context": "example",
+            "context_compact": "example",
+            "agent_info": "example",
+            "context_used_pct": "0%",
+            "context_left_pct": "100%",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 47259
+        },
+        {
+          "pane_id": "example-41",
+          "terminal_id": "example-43",
+          "workspace_id": "example-6",
+          "tab_id": "example-42",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "done": "example",
+            "blocked": "example",
+            "idle": "example",
+            "unknown": "example",
+            "working": "example"
+          },
+          "tokens": {
+            "context_window": "example",
+            "context_used": "example",
+            "context_left_pct": "78%",
+            "claude_icon": "example",
+            "agent_info": "example",
+            "model_id": "example",
+            "model_context": "example",
+            "context_used_pct": "22%",
+            "effort": "example",
+            "space_indigo": "example",
+            "context": "example",
+            "context_compact": "example",
+            "model": "example",
+            "context_left": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 45991
+        },
+        {
+          "pane_id": "example-44",
+          "terminal_id": "example-46",
+          "workspace_id": "example-6",
+          "tab_id": "example-45",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "done": "example",
+            "idle": "example",
+            "unknown": "example",
+            "working": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "claude_icon": "example",
+            "model_context": "example",
+            "context_left_pct": "63%",
+            "context_left": "example",
+            "model": "example",
+            "model_effort": "example",
+            "context_used": "example",
+            "model_id": "example",
+            "context_window": "example",
+            "context_compact": "example",
+            "space_indigo": "example",
+            "agent_info": "example",
+            "context": "example",
+            "context_used_pct": "37%",
+            "effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 45991
+        },
+        {
+          "pane_id": "example-47",
+          "terminal_id": "example-49",
+          "workspace_id": "example-6",
+          "tab_id": "example-48",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "working": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "model": "example",
+            "context": "example",
+            "context_used_pct": "22%",
+            "context_left": "example",
+            "effort": "example",
+            "model_effort": "example",
+            "model_id": "example",
+            "context_compact": "example",
+            "model_context": "example",
+            "context_left_pct": "78%",
+            "context_window": "example",
+            "claude_icon": "example",
+            "agent_info": "example",
+            "context_used": "example",
+            "space_indigo": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 45991
+        },
+        {
+          "pane_id": "example-50",
+          "terminal_id": "example-51",
+          "workspace_id": "example-8",
+          "tab_id": "example-7",
+          "focused": true,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "done",
+          "state_labels": {
+            "done": "example",
+            "unknown": "example",
+            "idle": "example",
+            "working": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "agent_info": "example",
+            "context_used_pct": "14%",
+            "claude_icon": "example",
+            "context_used": "example",
+            "context": "example",
+            "context_left": "example",
+            "effort": "example",
+            "space_green": "example",
+            "context_window": "example",
+            "context_compact": "example",
+            "model_effort": "example",
+            "model": "example",
+            "model_context": "example",
+            "context_left_pct": "86%",
+            "model_id": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 35
+          },
+          "revision": 108786
+        },
+        {
+          "pane_id": "example-73",
+          "terminal_id": "example-74",
+          "workspace_id": "example-8",
+          "tab_id": "example-7",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 3,
+            "viewport_rows": 35
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-52",
+          "terminal_id": "example-53",
+          "workspace_id": "example-10",
+          "tab_id": "example-9",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "blocked": "example",
+            "done": "example",
+            "working": "example",
+            "idle": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "model_id": "example",
+            "space_cyan": "example",
+            "context_left": "example",
+            "context_used": "example",
+            "agent_info": "example",
+            "context_left_pct": "89%",
+            "model": "example",
+            "context_compact": "example",
+            "model_context": "example",
+            "context": "example",
+            "model_effort": "example",
+            "effort": "example",
+            "claude_icon": "example",
+            "context_used_pct": "11%",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 35
+          },
+          "revision": 214390
+        },
+        {
+          "pane_id": "example-75",
+          "terminal_id": "example-76",
+          "workspace_id": "example-10",
+          "tab_id": "example-9",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 35
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-54",
+          "terminal_id": "example-55",
+          "workspace_id": "example-12",
+          "tab_id": "example-11",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "done": "example",
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "working": "example"
+          },
+          "tokens": {
+            "model_effort": "example",
+            "effort": "example",
+            "context_compact": "example",
+            "space_green": "example",
+            "context_used_pct": "10%",
+            "context_used": "example",
+            "model": "example",
+            "context_left": "example",
+            "context": "example",
+            "model_id": "example",
+            "model_context": "example",
+            "context_left_pct": "90%",
+            "agent_info": "example",
+            "claude_icon": "example",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 35
+          },
+          "revision": 30439
+        },
+        {
+          "pane_id": "example-77",
+          "terminal_id": "example-78",
+          "workspace_id": "example-12",
+          "tab_id": "example-11",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 35
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-79",
+          "terminal_id": "example-80",
+          "workspace_id": "example-14",
+          "tab_id": "example-13",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "display_agent": "example",
+          "agent_status": "unknown",
+          "state_labels": {
+            "working": "example",
+            "blocked": "example",
+            "done": "example",
+            "idle": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "space_lime": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 51,
+            "viewport_rows": 35
+          },
+          "revision": 94185
+        },
+        {
+          "pane_id": "example-81",
+          "terminal_id": "example-82",
+          "workspace_id": "example-14",
+          "tab_id": "example-13",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 423,
+            "viewport_rows": 35
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-83",
+          "terminal_id": "example-84",
+          "workspace_id": "example-14",
+          "tab_id": "example-72",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-56",
+          "terminal_id": "example-57",
+          "workspace_id": "example-16",
+          "tab_id": "example-15",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "done": "example",
+            "blocked": "example",
+            "working": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "context_used_pct": "14%",
+            "model_context": "example",
+            "context_left": "example",
+            "claude_icon": "example",
+            "context_window": "example",
+            "model": "example",
+            "space_red": "example",
+            "context": "example",
+            "model_id": "example",
+            "context_left_pct": "86%",
+            "model_effort": "example",
+            "agent_info": "example",
+            "effort": "example",
+            "context_used": "example",
+            "context_compact": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 57432
+        },
+        {
+          "pane_id": "example-85",
+          "terminal_id": "example-86",
+          "workspace_id": "example-18",
+          "tab_id": "example-17",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "display_agent": "example",
+          "agent_status": "unknown",
+          "state_labels": {
+            "done": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "working": "example",
+            "idle": "example"
+          },
+          "tokens": {
+            "space_magenta": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 428,
+            "viewport_rows": 35
+          },
+          "revision": 37657
+        },
+        {
+          "pane_id": "example-87",
+          "terminal_id": "example-88",
+          "workspace_id": "example-18",
+          "tab_id": "example-17",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 60,
+            "viewport_rows": 35
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-58",
+          "terminal_id": "example-59",
+          "workspace_id": "example-20",
+          "tab_id": "example-19",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "working": "example",
+            "blocked": "example",
+            "unknown": "example",
+            "idle": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "model_effort": "example",
+            "model_id": "example",
+            "space_green": "example",
+            "context_used": "example",
+            "context_left": "example",
+            "model_context": "example",
+            "model": "example",
+            "context": "example",
+            "context_left_pct": "88%",
+            "context_compact": "example",
+            "agent_info": "example",
+            "effort": "example",
+            "context_used_pct": "12%",
+            "claude_icon": "example",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 21447
+        },
+        {
+          "pane_id": "example-60",
+          "terminal_id": "example-61",
+          "workspace_id": "example-22",
+          "tab_id": "example-21",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "working": "example",
+            "blocked": "example",
+            "idle": "example",
+            "unknown": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "agent_info": "example",
+            "model_context": "example",
+            "claude_icon": "example",
+            "context_compact": "example",
+            "context_left_pct": "84%",
+            "context_used": "example",
+            "context": "example",
+            "context_used_pct": "16%",
+            "effort": "example",
+            "context_window": "example",
+            "model_id": "example",
+            "model": "example",
+            "context_left": "example",
+            "model_effort": "example",
+            "space_lime": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 19656
+        },
+        {
+          "pane_id": "example-62",
+          "terminal_id": "example-63",
+          "workspace_id": "example-24",
+          "tab_id": "example-23",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "state_labels": {
+            "idle": "example",
+            "done": "example",
+            "working": "example",
+            "unknown": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "space_teal": "example",
+            "context_compact": "example",
+            "context_used": "example",
+            "context_used_pct": "5%",
+            "effort": "example",
+            "context_left": "example",
+            "model": "example",
+            "context": "example",
+            "agent_info": "example",
+            "model_context": "example",
+            "context_left_pct": "95%",
+            "model_effort": "example",
+            "model_id": "example",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 3304
+        },
+        {
+          "pane_id": "example-64",
+          "terminal_id": "example-65",
+          "workspace_id": "example-26",
+          "tab_id": "example-25",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "state_labels": {
+            "working": "example",
+            "idle": "example",
+            "blocked": "example",
+            "unknown": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "model_effort": "example",
+            "agent_info": "example",
+            "space_lime": "example",
+            "context_left": "example",
+            "context_compact": "example",
+            "context_used": "example",
+            "context_left_pct": "96%",
+            "context": "example",
+            "context_used_pct": "4%",
+            "model_id": "example",
+            "model_context": "example",
+            "context_window": "example",
+            "effort": "example",
+            "model": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 2233
+        },
+        {
+          "pane_id": "example-66",
+          "terminal_id": "example-67",
+          "workspace_id": "example-28",
+          "tab_id": "example-27",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "state_labels": {
+            "working": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "idle": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "agent_info": "example",
+            "model_id": "example",
+            "context": "example",
+            "context_left": "example",
+            "context_used_pct": "6%",
+            "model": "example",
+            "space_red": "example",
+            "context_used": "example",
+            "context_left_pct": "94%",
+            "context_compact": "example",
+            "model_context": "example",
+            "effort": "example",
+            "context_window": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 3246
+        },
+        {
+          "pane_id": "example-68",
+          "terminal_id": "example-69",
+          "workspace_id": "example-30",
+          "tab_id": "example-29",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "state_labels": {
+            "done": "example",
+            "unknown": "example",
+            "working": "example",
+            "blocked": "example",
+            "idle": "example"
+          },
+          "tokens": {
+            "effort": "example",
+            "context_used_pct": "13%",
+            "model_context": "example",
+            "agent_info": "example",
+            "model": "example",
+            "context": "example",
+            "space_blue": "example",
+            "context_left_pct": "87%",
+            "context_left": "example",
+            "context_used": "example",
+            "context_compact": "example",
+            "model_id": "example",
+            "model_effort": "example",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 3213
+        },
+        {
+          "pane_id": "example-89",
+          "terminal_id": "example-90",
+          "workspace_id": "example-32",
+          "tab_id": "example-31",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent_status": "unknown",
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 0
+        },
+        {
+          "pane_id": "example-70",
+          "terminal_id": "example-71",
+          "workspace_id": "example-34",
+          "tab_id": "example-33",
+          "focused": false,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "state_labels": {
+            "unknown": "example",
+            "working": "example",
+            "idle": "example",
+            "blocked": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "model_context": "example",
+            "context": "example",
+            "model_effort": "example",
+            "agent_info": "example",
+            "context_compact": "example",
+            "model": "example",
+            "context_left_pct": "85%",
+            "context_window": "example",
+            "context_used_pct": "15%",
+            "context_used": "example",
+            "context_left": "example",
+            "space_blue": "example",
+            "effort": "example",
+            "model_id": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "scroll": {
+            "offset_from_bottom": 0,
+            "max_offset_from_bottom": 0,
+            "viewport_rows": 37
+          },
+          "revision": 3177
+        }
+      ],
+      "layouts": [
+        {
+          "workspace_id": "example-2",
+          "tab_id": "example-1",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-35",
+          "panes": [
+            {
+              "pane_id": "example-35",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-4",
+          "tab_id": "example-3",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-37",
+          "panes": [
+            {
+              "pane_id": "example-37",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-6",
+          "tab_id": "example-5",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-39",
+          "panes": [
+            {
+              "pane_id": "example-39",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-6",
+          "tab_id": "example-42",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-41",
+          "panes": [
+            {
+              "pane_id": "example-41",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-6",
+          "tab_id": "example-45",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-44",
+          "panes": [
+            {
+              "pane_id": "example-44",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-6",
+          "tab_id": "example-48",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-47",
+          "panes": [
+            {
+              "pane_id": "example-47",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-8",
+          "tab_id": "example-7",
+          "zoomed": true,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-50",
+          "panes": [
+            {
+              "pane_id": "example-50",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 118,
+                "height": 37
+              }
+            },
+            {
+              "pane_id": "example-73",
+              "focused": false,
+              "rect": {
+                "x": 118,
+                "y": 0,
+                "width": 117,
+                "height": 37
+              }
+            }
+          ],
+          "splits": [
+            {
+              "id": "example",
+              "direction": "example",
+              "ratio": 0.5,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ]
+        },
+        {
+          "workspace_id": "example-10",
+          "tab_id": "example-9",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-75",
+          "panes": [
+            {
+              "pane_id": "example-52",
+              "focused": false,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 118,
+                "height": 37
+              }
+            },
+            {
+              "pane_id": "example-75",
+              "focused": true,
+              "rect": {
+                "x": 118,
+                "y": 0,
+                "width": 117,
+                "height": 37
+              }
+            }
+          ],
+          "splits": [
+            {
+              "id": "example",
+              "direction": "example",
+              "ratio": 0.5,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ]
+        },
+        {
+          "workspace_id": "example-12",
+          "tab_id": "example-11",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-77",
+          "panes": [
+            {
+              "pane_id": "example-54",
+              "focused": false,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 118,
+                "height": 37
+              }
+            },
+            {
+              "pane_id": "example-77",
+              "focused": true,
+              "rect": {
+                "x": 118,
+                "y": 0,
+                "width": 117,
+                "height": 37
+              }
+            }
+          ],
+          "splits": [
+            {
+              "id": "example",
+              "direction": "example",
+              "ratio": 0.5,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ]
+        },
+        {
+          "workspace_id": "example-14",
+          "tab_id": "example-13",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-79",
+          "panes": [
+            {
+              "pane_id": "example-79",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 117,
+                "height": 37
+              }
+            },
+            {
+              "pane_id": "example-81",
+              "focused": false,
+              "rect": {
+                "x": 117,
+                "y": 0,
+                "width": 118,
+                "height": 37
+              }
+            }
+          ],
+          "splits": [
+            {
+              "id": "example",
+              "direction": "example",
+              "ratio": 0.49748743,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ]
+        },
+        {
+          "workspace_id": "example-14",
+          "tab_id": "example-72",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-83",
+          "panes": [
+            {
+              "pane_id": "example-83",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-16",
+          "tab_id": "example-15",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-56",
+          "panes": [
+            {
+              "pane_id": "example-56",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-18",
+          "tab_id": "example-17",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-85",
+          "panes": [
+            {
+              "pane_id": "example-85",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 118,
+                "height": 37
+              }
+            },
+            {
+              "pane_id": "example-87",
+              "focused": false,
+              "rect": {
+                "x": 118,
+                "y": 0,
+                "width": 117,
+                "height": 37
+              }
+            }
+          ],
+          "splits": [
+            {
+              "id": "example",
+              "direction": "example",
+              "ratio": 0.5,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ]
+        },
+        {
+          "workspace_id": "example-20",
+          "tab_id": "example-19",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-58",
+          "panes": [
+            {
+              "pane_id": "example-58",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-22",
+          "tab_id": "example-21",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-60",
+          "panes": [
+            {
+              "pane_id": "example-60",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-24",
+          "tab_id": "example-23",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-62",
+          "panes": [
+            {
+              "pane_id": "example-62",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-26",
+          "tab_id": "example-25",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-64",
+          "panes": [
+            {
+              "pane_id": "example-64",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-28",
+          "tab_id": "example-27",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-66",
+          "panes": [
+            {
+              "pane_id": "example-66",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-30",
+          "tab_id": "example-29",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-68",
+          "panes": [
+            {
+              "pane_id": "example-68",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-32",
+          "tab_id": "example-31",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-89",
+          "panes": [
+            {
+              "pane_id": "example-89",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        },
+        {
+          "workspace_id": "example-34",
+          "tab_id": "example-33",
+          "zoomed": false,
+          "area": {
+            "x": 0,
+            "y": 0,
+            "width": 235,
+            "height": 37
+          },
+          "focused_pane_id": "example-70",
+          "panes": [
+            {
+              "pane_id": "example-70",
+              "focused": true,
+              "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 235,
+                "height": 37
+              }
+            }
+          ],
+          "splits": []
+        }
+      ],
+      "agents": [
+        {
+          "terminal_id": "example-36",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "done": "example",
+            "idle": "example",
+            "blocked": "example",
+            "working": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "agent_info": "example",
+            "context_left_pct": "86%",
+            "context": "example",
+            "effort": "example",
+            "space_yellow": "example",
+            "context_left": "example",
+            "context_used": "example",
+            "model_context": "example",
+            "model_effort": "example",
+            "context_used_pct": "14%",
+            "context_window": "example",
+            "model_id": "example",
+            "claude_icon": "example",
+            "model": "example",
+            "context_compact": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-2",
+          "tab_id": "example-1",
+          "pane_id": "example-35",
+          "focused": false,
+          "state_change_seq": 10,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 45991
+        },
+        {
+          "terminal_id": "example-38",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "blocked": "example",
+            "done": "example",
+            "unknown": "example",
+            "idle": "example",
+            "working": "example"
+          },
+          "tokens": {
+            "context_compact": "example",
+            "context_left": "example",
+            "model_id": "example",
+            "space_lime": "example",
+            "context_window": "example",
+            "context_left_pct": "84%",
+            "effort": "example",
+            "model_context": "example",
+            "context_used": "example",
+            "model": "example",
+            "context_used_pct": "16%",
+            "claude_icon": "example",
+            "agent_info": "example",
+            "context": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-4",
+          "tab_id": "example-3",
+          "pane_id": "example-37",
+          "focused": false,
+          "state_change_seq": 11,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 45991
+        },
+        {
+          "terminal_id": "example-40",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "working": "example",
+            "idle": "example",
+            "done": "example",
+            "blocked": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "context_used": "0",
+            "model_effort": "example",
+            "context_window": "example",
+            "claude_icon": "example",
+            "context_left": "example",
+            "context_used_pct": "0%",
+            "model_id": "example",
+            "agent_info": "example",
+            "model": "example",
+            "effort": "example",
+            "context_compact": "example",
+            "context_left_pct": "100%",
+            "context": "example",
+            "space_indigo": "example",
+            "model_context": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-6",
+          "tab_id": "example-5",
+          "pane_id": "example-39",
+          "focused": false,
+          "state_change_seq": 194,
+          "completion_seq": 194,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 47259
+        },
+        {
+          "terminal_id": "example-43",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "working": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "model": "example",
+            "agent_info": "example",
+            "context_compact": "example",
+            "model_context": "example",
+            "effort": "example",
+            "model_effort": "example",
+            "context_left_pct": "78%",
+            "space_indigo": "example",
+            "context_used": "example",
+            "claude_icon": "example",
+            "model_id": "example",
+            "context": "example",
+            "context_used_pct": "22%",
+            "context_left": "example",
+            "context_window": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-6",
+          "tab_id": "example-42",
+          "pane_id": "example-41",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 14,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 45991
+        },
+        {
+          "terminal_id": "example-46",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "done": "example",
+            "working": "example",
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "context_left": "example",
+            "model_effort": "example",
+            "space_indigo": "example",
+            "agent_info": "example",
+            "context_left_pct": "63%",
+            "context_used": "example",
+            "context_compact": "example",
+            "claude_icon": "example",
+            "context_used_pct": "37%",
+            "context": "example",
+            "context_window": "example",
+            "model_id": "example",
+            "model_context": "example",
+            "effort": "example",
+            "model": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-6",
+          "tab_id": "example-45",
+          "pane_id": "example-44",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 16,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 45991
+        },
+        {
+          "terminal_id": "example-49",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "blocked": "example",
+            "unknown": "example",
+            "working": "example",
+            "idle": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "context_used": "example",
+            "context_left": "example",
+            "context": "example",
+            "context_window": "example",
+            "context_compact": "example",
+            "space_indigo": "example",
+            "model_context": "example",
+            "model": "example",
+            "context_left_pct": "78%",
+            "effort": "example",
+            "claude_icon": "example",
+            "context_used_pct": "22%",
+            "model_effort": "example",
+            "model_id": "example",
+            "agent_info": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-6",
+          "tab_id": "example-48",
+          "pane_id": "example-47",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 17,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 45991
+        },
+        {
+          "terminal_id": "example-51",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "done",
+          "state_labels": {
+            "working": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "idle": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "space_green": "example",
+            "context_left_pct": "86%",
+            "model_context": "example",
+            "model_effort": "example",
+            "model_id": "example",
+            "context_left": "example",
+            "context_window": "example",
+            "claude_icon": "example",
+            "context": "example",
+            "agent_info": "example",
+            "context_used": "example",
+            "context_compact": "example",
+            "context_used_pct": "14%",
+            "effort": "example",
+            "model": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-8",
+          "tab_id": "example-7",
+          "pane_id": "example-50",
+          "focused": true,
+          "state_change_seq": 532,
+          "completion_seq": 532,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 108786
+        },
+        {
+          "terminal_id": "example-53",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "unknown": "example",
+            "blocked": "example",
+            "done": "example",
+            "idle": "example",
+            "working": "example"
+          },
+          "tokens": {
+            "space_cyan": "example",
+            "context_left_pct": "89%",
+            "context_compact": "example",
+            "context_window": "example",
+            "agent_info": "example",
+            "context_left": "example",
+            "context_used": "example",
+            "context": "example",
+            "effort": "example",
+            "model_context": "example",
+            "context_used_pct": "11%",
+            "model_id": "example",
+            "model_effort": "example",
+            "claude_icon": "example",
+            "model": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-10",
+          "tab_id": "example-9",
+          "pane_id": "example-52",
+          "focused": false,
+          "state_change_seq": 486,
+          "completion_seq": 486,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 214390
+        },
+        {
+          "terminal_id": "example-55",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "done": "example",
+            "working": "example",
+            "unknown": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "context_used": "example",
+            "model_id": "example",
+            "context_left": "example",
+            "context_used_pct": "10%",
+            "context": "example",
+            "context_compact": "example",
+            "context_left_pct": "90%",
+            "model_effort": "example",
+            "effort": "example",
+            "claude_icon": "example",
+            "space_green": "example",
+            "model_context": "example",
+            "agent_info": "example",
+            "context_window": "example",
+            "model": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-12",
+          "tab_id": "example-11",
+          "pane_id": "example-54",
+          "focused": false,
+          "state_change_seq": 322,
+          "completion_seq": 322,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 30439
+        },
+        {
+          "terminal_id": "example-57",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "working": "example",
+            "done": "example"
+          },
+          "tokens": {
+            "context_compact": "example",
+            "model_context": "example",
+            "context_left": "example",
+            "context_left_pct": "86%",
+            "effort": "example",
+            "model_id": "example",
+            "model": "example",
+            "context": "example",
+            "claude_icon": "example",
+            "context_window": "example",
+            "context_used_pct": "14%",
+            "context_used": "example",
+            "space_red": "example",
+            "agent_info": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-16",
+          "tab_id": "example-15",
+          "pane_id": "example-56",
+          "focused": false,
+          "state_change_seq": 459,
+          "completion_seq": 459,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 57432
+        },
+        {
+          "terminal_id": "example-59",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "idle": "example",
+            "done": "example",
+            "working": "example",
+            "blocked": "example",
+            "unknown": "example"
+          },
+          "tokens": {
+            "claude_icon": "example",
+            "model_id": "example",
+            "context_compact": "example",
+            "agent_info": "example",
+            "effort": "example",
+            "model_effort": "example",
+            "context_used": "example",
+            "context_window": "example",
+            "model": "example",
+            "model_context": "example",
+            "context_used_pct": "12%",
+            "space_green": "example",
+            "context": "example",
+            "context_left_pct": "88%",
+            "context_left": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-20",
+          "tab_id": "example-19",
+          "pane_id": "example-58",
+          "focused": false,
+          "state_change_seq": 351,
+          "completion_seq": 351,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 21447
+        },
+        {
+          "terminal_id": "example-61",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "idle",
+          "state_labels": {
+            "working": "example",
+            "done": "example",
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "space_lime": "example",
+            "agent_info": "example",
+            "context_left": "example",
+            "model_id": "example",
+            "context_window": "example",
+            "context_left_pct": "84%",
+            "context_used_pct": "16%",
+            "context": "example",
+            "model_context": "example",
+            "context_used": "example",
+            "context_compact": "example",
+            "effort": "example",
+            "claude_icon": "example",
+            "model": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-22",
+          "tab_id": "example-21",
+          "pane_id": "example-60",
+          "focused": false,
+          "state_change_seq": 462,
+          "completion_seq": 462,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 19656
+        },
+        {
+          "terminal_id": "example-63",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "screen_detection_skipped": true,
+          "state_labels": {
+            "unknown": "example",
+            "working": "example",
+            "blocked": "example",
+            "done": "example",
+            "idle": "example"
+          },
+          "tokens": {
+            "context_left": "example",
+            "model_id": "example",
+            "context_used": "example",
+            "context_window": "example",
+            "agent_info": "example",
+            "model_effort": "example",
+            "context_left_pct": "95%",
+            "context_used_pct": "5%",
+            "context_compact": "example",
+            "model": "example",
+            "space_teal": "example",
+            "context": "example",
+            "model_context": "example",
+            "effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-24",
+          "tab_id": "example-23",
+          "pane_id": "example-62",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 525,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 3304
+        },
+        {
+          "terminal_id": "example-65",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "screen_detection_skipped": true,
+          "state_labels": {
+            "done": "example",
+            "unknown": "example",
+            "working": "example",
+            "idle": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "context_used": "example",
+            "context_window": "example",
+            "context_compact": "example",
+            "model_context": "example",
+            "context_left": "example",
+            "model_id": "example",
+            "space_lime": "example",
+            "effort": "example",
+            "model": "example",
+            "agent_info": "example",
+            "model_effort": "example",
+            "context": "example",
+            "context_left_pct": "96%",
+            "context_used_pct": "4%"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-26",
+          "tab_id": "example-25",
+          "pane_id": "example-64",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 531,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 2233
+        },
+        {
+          "terminal_id": "example-67",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "screen_detection_skipped": true,
+          "state_labels": {
+            "working": "example",
+            "done": "example",
+            "unknown": "example",
+            "blocked": "example",
+            "idle": "example"
+          },
+          "tokens": {
+            "model_context": "example",
+            "model_id": "example",
+            "context_left": "example",
+            "agent_info": "example",
+            "context_used_pct": "6%",
+            "context_left_pct": "94%",
+            "context": "example",
+            "context_window": "example",
+            "model_effort": "example",
+            "space_red": "example",
+            "context_used": "example",
+            "model": "example",
+            "effort": "example",
+            "context_compact": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-28",
+          "tab_id": "example-27",
+          "pane_id": "example-66",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 527,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 3246
+        },
+        {
+          "terminal_id": "example-69",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "screen_detection_skipped": true,
+          "state_labels": {
+            "done": "example",
+            "working": "example",
+            "blocked": "example",
+            "unknown": "example",
+            "idle": "example"
+          },
+          "tokens": {
+            "context_window": "example",
+            "context_used": "example",
+            "context_left_pct": "87%",
+            "context": "example",
+            "model": "example",
+            "agent_info": "example",
+            "effort": "example",
+            "context_left": "example",
+            "space_blue": "example",
+            "model_context": "example",
+            "model_id": "example",
+            "context_used_pct": "13%",
+            "context_compact": "example",
+            "model_effort": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-30",
+          "tab_id": "example-29",
+          "pane_id": "example-68",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 528,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 3213
+        },
+        {
+          "terminal_id": "example-71",
+          "name": "example",
+          "agent": "example",
+          "terminal_title": "example",
+          "terminal_title_stripped": "example",
+          "display_agent": "example",
+          "agent_status": "working",
+          "screen_detection_skipped": true,
+          "state_labels": {
+            "working": "example",
+            "done": "example",
+            "idle": "example",
+            "unknown": "example",
+            "blocked": "example"
+          },
+          "tokens": {
+            "model": "example",
+            "model_effort": "example",
+            "context_left_pct": "85%",
+            "context_used_pct": "15%",
+            "effort": "example",
+            "space_blue": "example",
+            "context_compact": "example",
+            "context_window": "example",
+            "context_left": "example",
+            "model_id": "example",
+            "context_used": "example",
+            "model_context": "example",
+            "context": "example",
+            "agent_info": "example"
+          },
+          "agent_session": {
+            "source": "example",
+            "agent": "example",
+            "kind": "example",
+            "value": "example"
+          },
+          "workspace_id": "example-34",
+          "tab_id": "example-33",
+          "pane_id": "example-70",
+          "focused": false,
+          "interactive_ready": true,
+          "state_change_seq": 529,
+          "cwd": "/home/example/project",
+          "foreground_cwd": "/home/example/project",
+          "revision": 3177
+        }
+      ]
+    }
+  }
+}
