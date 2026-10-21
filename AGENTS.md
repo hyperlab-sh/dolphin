@@ -2,37 +2,38 @@
 
 Dolphin is an agentic development environment (ADE) TUI built on [Husk](https://github.com/hyperlab-sh/husk) and backed by Herdr. Herdr runs workspaces, tabs, panes and agents; Dolphin replaces Herdr's client. It talks to an unmodified `herdr server` over `herdr.sock` (JSON-RPC and events) and `herdr-client.sock` (bincode, `PaneSurfaceFrame`), and presents the result as Husk plugins and slots.
 
-Whether other backends (Orca, bb) can be supported is an open question. The first task (`dolphin-res`) researches their APIs and decides if Dolphin defines a backend contract with Herdr as an adapter. Do not build backend abstractions before that decision.
+Dolphin builds directly on Herdr. Do not add a backend abstraction or backend trait. All Herdr-specific protocol code belongs in `dolphin-herdr`; the generic `husk-plugin` crate must stay independent of Herdr.
 
 ## Language
 
-Dolphin is implemented in **Rust** so it can reuse Herdr's protocol types and bincode codecs. The Rust workspace does not exist yet (`dolphin-rs`, after `dolphin-res`). Do not add new features in Go.
+Dolphin is implemented in **Rust** (minimum toolchain 1.88). The sidebar uses serde/serde_json and Tokio to speak the public socket protocols, without depending on Herdr's own crates. Do not add new features in Go.
 
 `spike/go` is a throwaway Go prototype of the Herdr sidebar (a Husk plugin). It is reference material to port from and will be deleted when the Rust version reaches parity.
 
 ## Build & Test
 
-No Rust build yet. The Go spike:
+From the repository root:
 
 ```bash
-cd spike/go
-go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
-go vet ./...
+cargo build --release
+cargo test
+cargo clippy --all-targets -- -D warnings
+cargo fmt --check
+./target/release/herdr-sidebar --probe
 ```
 
-The spike imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development use a gitignored `go.work` that includes a local Husk checkout:
+Run affected tests with `cargo test -p <changed-crate>`; include dependent crates when changing shared protocol code. All three crates have unit tests; Herdr fixtures are sanitized recorded responses, and RPC tests use isolated mock Unix sockets. Tests do not mutate a live Herdr server.
 
-```bash
-go work init . <path-to-husk-checkout>
-```
-
-There are no tests yet.
+`--probe` reads a live snapshot and exits. Normal plugin execution connects to `$HUSK_SOCKET_PATH`, or stdin/stdout when unset. Herdr socket resolution is `$HERDR_SOCKET_PATH`, `$XDG_CONFIG_HOME/herdr/herdr.sock`, then `~/.config/herdr/herdr.sock`. Keep diagnostics on stderr; stdout is the plugin protocol.
 
 ## Layout
 
 | Path | Purpose |
 | :--- | :--- |
-| `spike/go/cmd/herdr-sidebar/` | Go prototype Husk plugin: spaces, worktrees, tabs and agents from `herdr.sock`; publishes `workspace_context` |
+| `crates/husk-plugin/` | Generic Husk protocol payloads and newline-delimited JSON socket/stdio transport |
+| `crates/dolphin-herdr/` | Herdr RPC client, typed snapshots/layouts, events and sanitized fixtures |
+| `crates/herdr-sidebar/` | Rust sidebar binary, state machine, ANSI rendering and Husk manifest |
+| `spike/go/cmd/herdr-sidebar/` | Go reference prototype; retained until a later cleanup task |
 | `spike/go/pkg/herdr/` | Prototype Herdr JSON-RPC socket client |
 | `spike/go/plugins/herdr-sidebar/husk-plugin.json` | Prototype plugin manifest |
 | `docs/` | docmd documentation site |
