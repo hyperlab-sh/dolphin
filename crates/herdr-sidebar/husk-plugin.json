@@ -1,0 +1,19 @@
+{
+  "id": "dolphin.herdr-sidebar",
+  "name": "Herdr Sidebar & Telemetry Bridge",
+  "version": "0.1.0",
+  "language": "rust",
+  "description": "Out-of-process Husk plugin connecting live to herdr.sock for Spaces, Worktrees, Tabs, Panes, and Agents.",
+  "command": [
+    "target/release/herdr-sidebar"
+  ],
+  "slots": [
+    "sidebar-navigation",
+    "sidebar-list",
+    "thread-row-status",
+    "sidebar-footer",
+    "main-header",
+    "main-stage",
+    "side-panel"
+  ]
+}
