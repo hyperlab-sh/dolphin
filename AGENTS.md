@@ -4,19 +4,17 @@ Dolphin is an agentic development environment (ADE) TUI built on [Husk](https://
 
 Whether other backends (Orca, bb) can be supported is an open question. The first task (`dolphin-res`) researches their APIs and decides if Dolphin defines a backend contract with Herdr as an adapter. Do not build backend abstractions before that decision.
 
-This is a hyper space: project files live in `worktrees/main/`; `bin/`, `data/`, `notes/`, `scratch/` at the space root are local-only. Read `HYPER.md` at the space root for layout rules. Design research is not in the repo: it lives in `notes/research/` (`../../notes/research/` from the worktree), starting at `00-overview-and-roadmap.md`. Husk-side research (docs 07–09) is in the Husk space's `notes/research/`.
-
 ## Build & Test
 
 ```bash
-go build -o ../../bin/herdr-sidebar ./cmd/herdr-sidebar
+go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
 go vet ./...
 ```
 
-Dolphin imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development a gitignored `go.work` in the worktree uses the sibling Husk checkout (`../../../husk/worktrees/main`). Recreate it if missing:
+Dolphin imports `github.com/hyperlab-sh/husk/pkg/huskipc` and `pkg/theme`. For local development use a gitignored `go.work` that includes a local Husk checkout:
 
 ```bash
-go work init . ../../../husk/worktrees/main
+go work init . <path-to-husk-checkout>
 ```
 
 There are no tests yet.
@@ -34,13 +32,12 @@ There are no tests yet.
 
 - Husk owns the UI host. Dolphin must use Husk's public protocol and never reach around it.
 - Herdr-specific code stays in `pkg/herdr` and the plugins that use it.
-- Project status lives in `STATUS.md` at the space root (local-only, not in the repo); update it when state changes.
 - Use Charm's default palette (ANSI / lipgloss presets). No custom hex themes.
 - Conventional commits with detailed messages. No attribution trailers.
 
 ## Beads Issue Tracker
 
-This project uses **bd (beads)** for issue tracking. The database is shared with Husk and lives at `/work/lab/.beads` (Dolphin issues use the `dolphin-` prefix, Husk issues `husk-`; a Dolphin issue may depend on a Husk one). Run `bd prime` for full workflow context.
+This project uses **bd (beads)** for issue tracking. The database is shared with Husk (Dolphin issues use the `dolphin-` prefix, Husk issues `husk-`; a Dolphin issue may depend on a Husk one). Run `bd prime` for full workflow context.
 
 ```bash
 bd ready              # Find available work

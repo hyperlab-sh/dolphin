@@ -6,3 +6,6 @@ docs/site/
 # local multi-module workspace (points at the sibling husk worktree)
 go.work
 go.work.sum
+
+# build output
+/bin/

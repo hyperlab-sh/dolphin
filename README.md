@@ -17,7 +17,7 @@ Work is tracked in beads (`dolphin-*`, shared with Husk since Dolphin depends on
 
 ## Build
 
-Dolphin imports Husk's public packages. For local development, a gitignored `go.work` points at the sibling Husk checkout.
+Dolphin imports Husk's public packages. For local development, a gitignored `go.work` points at a local Husk checkout.
 
 ```bash
 go build -o bin/herdr-sidebar ./cmd/herdr-sidebar
