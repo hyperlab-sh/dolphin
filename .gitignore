@@ -3,9 +3,13 @@
 docs/node_modules/
 docs/site/
 
-# local multi-module workspace (points at the sibling husk worktree)
+# local Go prototype workspace
 go.work
 go.work.sum
 
 # build output
 /bin/
+/target/
+
+# agent task output
+.pi/tasks/
