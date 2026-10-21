@@ -175,6 +175,59 @@ mod tests {
             assert_eq!(serde_json::to_value(env).unwrap(), fixture);
         }
     }
+    #[test]
+    fn omitted_empty_and_null_collections_follow_go_decoding_and_omitempty() {
+        use serde_json::{json, Value};
+        for mode in ["omitted", "empty", "null"] {
+            let mut hello = json!({"type":"hello","hello":{}});
+            let mut update = json!({"type":"slot_update","slot_update":{}});
+            let mut welcome = json!({"type":"welcome","welcome":{}});
+            if mode != "omitted" {
+                let array = if mode == "null" {
+                    Value::Null
+                } else {
+                    json!([])
+                };
+                let map = if mode == "null" {
+                    Value::Null
+                } else {
+                    json!({})
+                };
+                for field in ["slots", "commands", "keybindings", "rail_items"] {
+                    hello["hello"][field] = array.clone();
+                }
+                update["slot_update"]["lines"] = array.clone();
+                update["slot_update"]["hit_targets"] = array;
+                update["slot_update"]["status_meta"] = map.clone();
+                welcome["welcome"]["slot_sizes"] = map;
+            }
+            let hello: Envelope = serde_json::from_value(hello).unwrap();
+            assert!(hello.hello.as_ref().unwrap().slots.is_empty());
+            let encoded = serde_json::to_value(hello).unwrap();
+            assert_eq!(encoded["hello"]["slots"], json!([]));
+            for field in ["commands", "keybindings", "rail_items"] {
+                assert!(encoded["hello"].get(field).is_none(), "{mode}: {field}");
+            }
+            let update: Envelope = serde_json::from_value(update).unwrap();
+            let encoded = serde_json::to_value(update).unwrap();
+            assert_eq!(encoded["slot_update"]["lines"], json!([]));
+            for field in ["hit_targets", "status_meta"] {
+                assert!(
+                    encoded["slot_update"].get(field).is_none(),
+                    "{mode}: {field}"
+                );
+            }
+            let welcome: Envelope = serde_json::from_value(welcome).unwrap();
+            assert!(welcome.welcome.unwrap().slot_sizes.is_empty());
+        }
+        let envelope: Envelope =
+            serde_json::from_value(json!({"type":"close_modal","close_modal":false,"hello":null}))
+                .unwrap();
+        assert_eq!(
+            serde_json::to_value(envelope).unwrap(),
+            json!({"type":"close_modal"})
+        );
+    }
     #[tokio::test]
     async fn framing_skips_bad_json_and_accepts_final_line() {
         let data = b"\nnot json\n{\"type\":\"close_modal\",\"close_modal\":true}";
